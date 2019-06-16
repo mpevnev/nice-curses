@@ -485,6 +485,7 @@ final class Window
             import std.range;
             import std.uni;
 
+            scope(exit) setAttr(Attr.normal);
             setAttr(attr);
             wchar_t[] chars = [];
             chars.reserve(str.walkLength);
