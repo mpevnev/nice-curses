@@ -868,6 +868,16 @@ final class Window
                 throw new NCException("Failed to get a wide character");
         }
 
+        int begX() @property
+        {
+            return nc.getbegx(ptr);
+        }
+
+        int begY() @property
+        {
+            return nc.getbegy(ptr);
+        }
+
         int curX() @property
         {
             return nc.getcurx(ptr);

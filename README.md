@@ -238,6 +238,8 @@ These are for retrieving information from the window.
   timeout mode (see `timeout` method).
 - `WChar getwch()` - get a single wide character from the keyboard. Might throw
   in timeout mode (see `timeout` method).
+- `int begX()` - get the X coordinate of the window's upper-left corner.
+- `int begY()` - get the Y coordinate of the window's upper-left corner.
 - `int curX()` - get the X coordinate of the cursor.
 - `int curY()` - get the Y coordinate of the cursor.
 - `int width()` - get the width of the window.
